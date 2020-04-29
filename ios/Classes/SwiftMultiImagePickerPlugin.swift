@@ -67,7 +67,7 @@ public class SwiftMultiImagePickerPlugin: NSObject, FlutterPlugin {
             }
             
             let vc = BSImagePickerViewController()
-            
+            vc.modalPresentationStyle = .fullScreen
             if #available(iOS 13.0, *) {
                 // Disables iOS 13 swipe to dismiss - to force user to press cancel or done.
                 vc.isModalInPresentation = true
